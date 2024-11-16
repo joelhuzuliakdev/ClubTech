@@ -85,7 +85,7 @@
     <!-- #### METODOS DE PAGO #### -->
 
     <div class="contenedorMetodoPago hidden">
-        <div class="metodoPago">
+        <div class="metodoPagoContenedor">
             <div class="metodoPagoTitulo">
                 <h2>Información personal</h2>
                 <ion-icon class="metodoPagoCerrar" name="close-circle-outline"></ion-icon>
@@ -106,7 +106,7 @@
                     <input type="text" required placeholder="Salta 1234">
                 </label>
 
-                <label for="">
+                <label class="infoTarjeta" for="">
                     <h3>Informacion de la tarjeta</h3>
                     <div class="tarjetaInfo">
                         <img src="img/visa.png" alt="Logo de tarjeta visa">
@@ -116,7 +116,7 @@
                     <input type="number" required placeholder="Numero de la tarjeta">
                 </label>
 
-                <label class="fechaTarjeta" for="">
+                <label id="fechaTarjeta" for="">
                     <input id="fechaTarjetaInput" required type="number" placeholder="mm">
                     <input id="fechaTarjetaInput" required type="number" placeholder="yyyy">
                     <input id="fechaTarjetaInput" required type="number" placeholder="cvv">

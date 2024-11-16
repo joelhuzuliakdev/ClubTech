@@ -363,126 +363,199 @@ main {
 .contenedorMetodoPago {
     width: 100%;
     height: auto;
-    background-color: #0e0c0c;
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 20px;
+    background-color: #000;
+    padding-bottom: 20px;
 }
 
-.metodoPago {
-    width: 50%;
-    background-color: #000;
+.metodoPagoContenedor {
+    width: 100%;
+    display: block;
+    justify-content: center;
+    align-items: center;
 }
 
 .metodoPagoTitulo {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
+    padding-top: 20px;
 }
 
 .metodoPagoTitulo h2 {
-    margin-left: 50px;
-    margin-top: 20px;
+    font-size: 20px;
 }
 
 .metodoPagoCerrar {
-    margin-right: 30px;
-    font-size: 30px;
-    cursor: pointer;
-}
-
-.metodoPagoCerrar:hover {
     color: #37fd12;
-}
+    font-size: 24px;
+    cursor: pointer;
+} 
 
 .metodoPagoInfo {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding-left: 50px;
-    padding-right: 50px;
+    margin-top: 20px;
 }
 
 .metodoPagoInfo label {
     width: 100%;
-    margin-top: 20px;
 }
 
-.metodoPagoInfo label p {
+.metodoPagoInfo p {
     color: #808080;
-    letter-spacing: 1px;
+    margin-left: 27px;
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
 
-.metodoPagoInfo label input {
-    width: 100%;
-    height: 6vh;
+.metodoPagoInfo input {
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    background-color: #181A1B;
     border: none;
     border-bottom: 2px solid #808080;
-    background-color: #181A1B;
-    padding-left: 10px;
+    padding: 7px;
+}
+
+.infoTarjeta {
+    width: 100%;
+}
+
+.infoTarjeta h3 {
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.infoTarjeta input {
+    margin-bottom: 10px;
 }
 
 .tarjetaInfo {
     width: 100%;
     display: flex;
-    justify-content: start;
+    justify-content: space-evenly;
     align-items: center;
 }
 
 .tarjetaInfo img {
     width: 50px;
-    margin-right: 10px;
 }
 
-.fechaTarjeta {
+#fechaTarjeta {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
 }
 
 #fechaTarjetaInput {
-    width: 170px;
-}
-
-.btnPago {
-    width: 100%;
-    height: 6vh;
-    color: #000;
-    font-weight: bold;
-    letter-spacing: 1px;
-    font-size: 18px;
-    background-color: #37fd12;
-    border: none;
     margin-bottom: 10px;
 }
 
-@media (max-width: 390px) {
+.btnPago {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: #37fd12;
+    border: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 7px;
+}
 
-    .contenedorMetodoPago {
-        padding-top: 0px;
+@media (min-width: 700px) {
+
+    .metodoPagoContenedor {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    
+    .metodoPagoTitulo {
+        width: 100%;
+        justify-content: space-around;
     }
 
-    .metodoPago {
-        width: 100%;
+    .metodoPagoTitulo h2 {
+        font-size: 25px;
     }
 
     .metodoPagoCerrar {
-        color: #fff;
-    } 
+        font-size: 30px;
+    }
 
-    .fechaTarjeta {
+    .metodoPagoInfo p {
+        margin-left: 55px;
+    }
+
+    .infoTarjeta h3 {
+        text-align: start;
+        margin-left: 55px;
+        font-size: 25px;
+    }
+
+    .tarjetaInfo {
+        justify-content: space-around;
+    }
+
+    .tarjetaInfo img {
+        width: 70px;
+    }
+}
+
+@media (min-width: 900px) {
+
+    .metodoPagoInfo p {
+        margin-left: 70px;
+    }
+
+    .infoTarjeta h3 {
+        margin-left: 70px;
+    }
+}
+
+@media (min-width: 1000px) {
+
+    .metodoPagoInfo p {
+        margin-left: 80px;
+    }
+
+    .infoTarjeta h3 {
+        margin-left: 80px;
+    }
+
+    #fechaTarjeta {
+        width: 80%;
         display: flex;
-        flex-direction: column;
+        justify-content: space-between;
+        margin: 0 auto;
     }
 
     #fechaTarjetaInput {
-        width: 100%;
-        margin-bottom: 10px;
+        width: 33%;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .metodoPagoInfo p {
+        margin-left: 95px;
+    }
+
+    .infoTarjeta h3 {
+        margin-left: 95px;
+    }
+}
+
+@media (min-width: 1400px) {
+
+    .metodoPagoInfo p {
+        margin-left: 150px;
+    }
+
+    .infoTarjeta h3 {
+        margin-left: 150px;
     }
 }
 
