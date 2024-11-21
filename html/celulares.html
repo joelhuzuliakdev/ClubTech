@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <!-- #### FONTS AWESOME ICONOS #### -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <!-- #### LINK DE CSS #### -->
+    <!-- #### LINK DE COMPONENTES CSS #### -->
+    <link rel="stylesheet" href="../css/componentes.css">
+    <!-- #### LINK DE INDEX CSS #### -->
     <link rel="stylesheet" href="../css/index.css">
     <!-- #### LINK DE ICON EN VENTANA #### -->
     <link rel="icon" href="../img/logo.jpg">
@@ -73,8 +75,192 @@
         <button id="checkout-button">Finalizar Compra</button>
     </div>
 
+    <main>
 
+        <section class="swiper mySwiper" id="componentes">
+            <h2>Iphones</h2>
+            <div class="swiper-wrapper">
+    
+                <div class="swiper-slide">
+                    <div class="icon">
+                        <i class="fa-solid fa-circle-arrow-left"></i>
+                        <img src="../img/logo.jpg" alt="Logo de la empresa">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-txt">
+                            <span>$100</span>
+                            <h3>Funda Celular</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        </div>
+                        <div class="product-img">
+                            <img src="../img/nuevoIngresoUno.png" alt="">
+                        </div>
+                    </div>
+                    <div class="contenedorColores">
+                        <a class="colorUno" href="#"></a>
+                        <a class="colorDos" href="#"></a>
+                        <a class="colorTres" href="#"></a>
+                        <a class="colorCuatro" href="#"></a>
+                    </div>
+                    <button class="btn-1 comprar" onclick="addToCart({id: 1, name: 'Funda Celular', price: 100})">Comprar</button>
+                </div>
+    
+                <div class="swiper-slide">
+                    <div class="icon">
+                        <i class="fa-solid fa-circle-arrow-left"></i>
+                        <img src="../img/logo.jpg" alt="Logo de la empresa">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-txt">
+                            <span>$200</span>
+                            <h3>Funda Celular</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        </div>
+                        <div class="product-img">
+                            <img src="../img/nuevoIngresoUno.png" alt="">
+                        </div>
+                    </div>
+                    <button class="btn-1 comprar" onclick="addToCart({id: 2, name: 'Funda Celular X2', price: 200})">Comprar</button>
+                </div>
 
+                <div class="swiper-slide">
+                    <div class="icon">
+                        <i class="fa-solid fa-circle-arrow-left"></i>
+                        <img src="../img/logo.jpg" alt="Logo de la empresa">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-txt">
+                            <span>$300</span>
+                            <h3>Funda Celular</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        </div>
+                        <div class="product-img">
+                            <img src="../img/nuevoIngresoUno.png" alt="">
+                        </div>
+                    </div>
+                    <button class="btn-1 comprar" onclick="addToCart({id: 3, name: 'Funda Celular X3', price: 300})">Comprar</button>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="icon">
+                        <i class="fa-solid fa-circle-arrow-left"></i>
+                        <img src="../img/logo.jpg" alt="Logo de la empresa">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-txt">
+                            <span>$400</span>
+                            <h3>Funda Celular</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        </div>
+                        <div class="product-img">
+                            <img src="../img/nuevoIngresoUno.png" alt="">
+                        </div>
+                    </div>
+                    <button class="btn-1 comprar" onclick="addToCart({id: 4, name: 'Funda Celular X4', price: 400})">Comprar</button>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="icon">
+                        <i class="fa-solid fa-circle-arrow-left"></i>
+                        <img src="../img/logo.jpg" alt="Logo de la empresa">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-txt">
+                            <span>$500</span>
+                            <h3>Funda Celular</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        </div>
+                        <div class="product-img">
+                            <img src="../img/nuevoIngresoUno.png" alt="">
+                        </div>
+                    </div>
+                    <button class="btn-1 comprar" onclick="addToCart({id: 5, name: 'Funda Celular X5', price: 500})">Comprar</button>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="icon">
+                        <i class="fa-solid fa-circle-arrow-left"></i>
+                        <img src="../img/logo.jpg" alt="Logo de la empresa">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-txt">
+                            <span>$600</span>
+                            <h3>Funda Celular</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        </div>
+                        <div class="product-img">
+                            <img src="../img/nuevoIngresoUno.png" alt="">
+                        </div>
+                    </div>
+                    <button class="btn-1 comprar" onclick="addToCart({id: 6, name: 'Funda Celular X6', price: 600})">Comprar</button>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="icon">
+                        <i class="fa-solid fa-circle-arrow-left"></i>
+                        <img src="../img/logo.jpg" alt="Logo de la empresa">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-txt">
+                            <span>$700</span>
+                            <h3>Funda Celular</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        </div>
+                        <div class="product-img">
+                            <img src="../img/nuevoIngresoUno.png" alt="">
+                        </div>
+                    </div>
+                    <button class="btn-1 comprar" onclick="addToCart({id: 7, name: 'Funda Celular X7', price: 700})">Comprar</button>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="icon">
+                        <i class="fa-solid fa-circle-arrow-left"></i>
+                        <img src="../img/logo.jpg" alt="Logo de la empresa">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-txt">
+                            <span>$800</span>
+                            <h3>Funda Celular</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        </div>
+                        <div class="product-img">
+                            <img src="../img/nuevoIngresoUno.png" alt="">
+                        </div>
+                    </div>
+                    <button class="btn-1 comprar" onclick="addToCart({id: 8, name: 'Funda Celular X8', price: 800})">Comprar</button>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="icon">
+                        <i class="fa-solid fa-circle-arrow-left"></i>
+                        <img src="../img/logo.jpg" alt="Logo de la empresa">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-txt">
+                            <span>$900</span>
+                            <h3>Funda Celular</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        </div>
+                        <div class="product-img">
+                            <img src="../img/nuevoIngresoUno.png" alt="">
+                        </div>
+                    </div>
+                    <button class="btn-1 comprar" onclick="addToCart({id: 9, name: 'Funda Celular X9', price: 900})">Comprar</button>
+                </div>
+                
+            </div>
+        </section>
+    </main>
 
 
     
@@ -122,6 +308,6 @@
     <!-- #### SCRIPT DE BOOTSTRAP #### -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- #### SCRIP JS #### -->
-    <script src="js/main.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 </html>
